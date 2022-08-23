@@ -30,7 +30,7 @@ app.post("/updateLocation", (req,res) => {
     longitude_buffer = longitude;
     last_update = new Date();
 
-    console.log('latitude: '+latitude_buffer+', longitude: '+longitude_buffer);
+    console.log('['+new Date().toUTCString()+'] Latitude: '+latitude_buffer+', Longitude: '+longitude_buffer);
 
     res.sendStatus(200);
 });
